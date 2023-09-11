@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="CENTER_LEFT" prefHeight="411.0" prefWidth="655.0" spacing="20.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.controller.CadastroUserController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+    <children>
+        <AnchorPane prefHeight="602.0" prefWidth="615.0">
+            <children>
+                <TextField fx:id="txtNomeCadastro" layoutX="14.0" layoutY="92.0" prefHeight="40.0" prefWidth="222.0" promptText="Nome Completo" />
+            <DatePicker fx:id="dtNascimento" layoutX="14.0" layoutY="162.0" prefHeight="40.0" prefWidth="222.0" promptText="Data de Nascimento" />
+                <TextField fx:id="txtCelular" layoutX="14.0" layoutY="236.0" prefHeight="40.0" prefWidth="222.0" promptText="Celular + DDD" />
+                <TextField fx:id="txtCep" layoutX="14.0" layoutY="305.0" prefHeight="40.0" prefWidth="222.0" promptText="CEP residencial" />
+                <Label layoutX="14.0" layoutY="62.0" style="-fx-font-weight: bold;" text="Nome ">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </Label>
+                <Label layoutX="367.0" layoutY="137.0" style="-fx-font-weight: bold;" text="Email">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </Label>
+                <Label layoutX="365.0" layoutY="208.0" style="-fx-font-weight: bold;" text="Senha">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </Label>
+                <Label layoutX="14.0" layoutY="208.0" style="-fx-font-weight: bold;" text="Celular">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </Label>
+                <Label layoutX="14.0" layoutY="280.0" style="-fx-font-weight: bold;" text="CEP">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </Label>
+                <Label layoutX="367.0" layoutY="62.0" style="-fx-font-weight: bold;" text="CPF">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </Label>
+                <Label layoutX="14.0" layoutY="137.0" style="-fx-font-weight: bold;" text="Data de nascimento">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </Label>
+                <TextField fx:id="txtCpf" layoutX="367.0" layoutY="92.0" prefHeight="40.0" prefWidth="222.0" promptText="Número de CPF" />
+                <TextField fx:id="txtEmail" layoutX="367.0" layoutY="162.0" prefHeight="40.0" prefWidth="222.0" promptText="Email" />
+                <PasswordField fx:id="txtSenhaCadastro" layoutX="367.0" layoutY="236.0" prefHeight="40.0" prefWidth="222.0" promptText="Senha" />
+                <Label layoutX="216.0" layoutY="14.0" style="-fx-font-weight: bold;" text="Área de Cadastro">
+                    <font>
+                        <Font size="24.0" />
+                    </font>
+                </Label>
+            <Button fx:id="btnCadastrarUsuario" layoutX="490.0" layoutY="306.0" mnemonicParsing="false" onAction="#cadastrarButtonClicked" style="-fx-background-color: #2196F3; -fx-text-fill: white; -fx-padding: 10px 20px; -fx-font-size: 14px; -fx-border-radius: 5px;" text="Cadastrar" />
+            <Button fx:id="btn_voltar" layoutX="371.0" layoutY="306.0" mnemonicParsing="false" onAction="#voltar" style="-fx-background-color: #2196F3; -fx-text-fill: white; -fx-padding: 10px 20px; -fx-font-size: 14px; -fx-border-radius: 5px;" text="Voltar" />
+            </children>
+        </AnchorPane>
+        <HBox prefHeight="6.0" prefWidth="305.0" spacing="10.0" />
+    </children>
+</VBox>

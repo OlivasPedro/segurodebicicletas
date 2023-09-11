@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="CENTER_LEFT" prefHeight="420.0" prefWidth="680.0" spacing="20.0" style="-fx-background-color: #f5f5f5;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.controller.PrimaryController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+    <children>
+        <HBox prefHeight="6.0" prefWidth="640.0" spacing="10.0" />
+        <AnchorPane prefHeight="350.0" prefWidth="640.0">
+            <children>
+                <TextField fx:id="txtEmail" layoutX="70.0" layoutY="93.0" prefHeight="40.0" prefWidth="500.0" promptText="Email" />
+                <PasswordField fx:id="txtSenha" layoutX="70.0" layoutY="166.0" prefHeight="40.0" prefWidth="500.0" promptText="Senha" />
+                <Label layoutX="70.0" layoutY="64.0" style="-fx-font-weight: bold;" text="Email">
+                    <font>
+                        <Font size="16.0" />
+                    </font>
+                </Label>
+                <Label layoutX="70.0" layoutY="135.0" style="-fx-font-weight: bold;" text="Senha">
+                    <font>
+                        <Font size="16.0" />
+                    </font>
+                </Label>
+                <Label layoutX="21.0" layoutY="-6.0" style="-fx-font-weight: bold;" text="Bem-vindo à Área de Acesso">
+                    <font>
+                        <Font size="28.0" />
+                    </font>
+                </Label>
+                <HBox alignment="CENTER_LEFT" layoutX="67.0" layoutY="258.0" spacing="10.0">
+                    <Button fx:id="btnLogin" onAction="#loginButtonClicked" prefHeight="37.0" prefWidth="67.0" style="-fx-background-color: #4caf50; -fx-text-fill: white;" text="Login" />
+                    <Button fx:id="btnCadastrar" onAction="#cadastrarButtonClicked" prefHeight="37.0" prefWidth="67.0" style="-fx-background-color: #2196f3; -fx-text-fill: white;" text="Cadastrar" />
+                </HBox>
+            </children>
+        </AnchorPane>
+    </children>
+</VBox>
